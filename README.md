@@ -27,30 +27,55 @@ The temperature sensor reads environmental temperature and sends data to the Ard
 #include <DHT.h>
 
 #define DHTPIN 2        // Data pin connected to Arduino
+
 #define DHTTYPE DHT22   // Change to DHT11 if needed
 
 DHT dht(DHTPIN, DHTTYPE);
 
-void setup() {
+void setup() 
+
+{
+
   Serial.begin(9600);
+  
   dht.begin();
-  Serial.println("Temperature Monitoring System Started...");
+  
+  Serial.println("Temperature 
+  
+  Monitoring System Started...");
+  
 }
 
-void loop() {
-  float temperature = dht.readTemperature();
+void loop() 
+{
+
+  float temperature = 
+  
+  dht.readTemperature();
+  
   float humidity = dht.readHumidity();
 
-  if (isnan(temperature) || isnan(humidity)) {
+  if (isnan(temperature) || 
+  
+  isnan(humidity)) 
+  {
+  
     Serial.println("Failed to read from DHT sensor!");
+    
     return;
+    
   }
 
   Serial.print("Temperature: ");
+  
   Serial.print(temperature);
+  
   Serial.print(" °C  |  Humidity: ");
+  
   Serial.print(humidity);
+  
   Serial.println(" %");
 
   delay(2000); // Read every 2 seconds
+  
 }
