@@ -1,12 +1,12 @@
 # IoT Temperature Monitoring System
 
 ##  Overview
-This project monitors temperature using a sensor and displays the data using Arduino. It can be extended for IoT-based remote monitoring.
+This project monitors temperature using a sensor and displays the data using Arduino. It can be extended for IoT-based remote monitoring. I've done this project by using wokwi which is an online circuit simulator.
 
-## Components Used
+## Components Used in wokwi
 - Arduino Uno
 - Temperature Sensor (DS18B20 / DHT22)
-- Jumper Wires
+- connecting wires
 
 ##  Working Principle
 The temperature sensor reads environmental temperature and sends data to the Arduino. The Arduino processes the data and displays it via Serial Monitor.
