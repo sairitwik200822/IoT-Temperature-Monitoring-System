@@ -11,16 +11,13 @@ This project monitors temperature using a sensor and displays the data using Ard
 ##  Working Principle
 The temperature sensor reads environmental temperature and sends data to the Arduino. The Arduino processes the data and displays it via Serial Monitor.
 
-## 💻 Code Features
+## Code Features
 - Sensor data reading
 - Real-time monitoring
 - Serial output display
-
-
-## Output
-(Add screenshot here)
 
 ##  Future Improvements
 - WiFi-based monitoring (ESP8266)
 - Mobile app integration
 - Data logging
+- triggering an alarm or buzzer when temperature reaches a certain threshold
